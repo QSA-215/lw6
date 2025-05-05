@@ -55,20 +55,21 @@ public class Shape
             GL.Color3(r, g, b);
 
             GL.Begin(PrimitiveType.Triangles);
-
-            int[] indices = mesh.GetIndices();
-
-            for (int i = 0; i < indices.Length; i++)
+            foreach (var face in mesh.Faces)
             {
-                int index = indices[i];
+                foreach (int index in face.Indices)
+                {
+                    var normal = mesh.Normals[index];
+                    GL.Normal3(normal.X, normal.Y, normal.Z);
 
-                var normal = mesh.Normals[index];
-                GL.Normal3(normal.X, normal.Y, normal.Z);
-
-                var vertex = mesh.Vertices[index];
-                GL.Vertex3(_x + vertex.X * _scale, _y + vertex.Y * _scale, _z + vertex.Z * _scale);
+                    var vertex = mesh.Vertices[index];
+                    GL.Vertex3(
+                        _x + vertex.X * _scale,
+                        _y + vertex.Y * _scale,
+                        _z + vertex.Z * _scale
+                    );
+                }
             }
-
             GL.End();
         }
     }

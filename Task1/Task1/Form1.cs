@@ -29,24 +29,32 @@ public partial class Form1 : Form
     {
         GL.ClearColor(0.8f, 1.0f, 1.0f, 1.0f);
         GL.Enable(EnableCap.DepthTest);
+        GL.Enable(EnableCap.Lighting);
+        GL.Enable(EnableCap.Light0);
+        GL.Enable(EnableCap.ColorMaterial);
 
-
-        int vertexBufferObj = GL.GenBuffer();
-        GL.BindBuffer(BufferTarget.ArrayBuffer, vertexBufferObj);
-        int vertexArrayObj = GL.GenVertexArray();
-        GL.BindVertexArray(vertexArrayObj);
-        UpdateViewMatrix();
         CalculateProjectionMatrix();
+        LoadProjectionMatrix();
+        UpdateViewMatrix();
 
         _picture.LoadPicture();
     }
+
+    private void LoadProjectionMatrix()
+    {
+        GL.MatrixMode(MatrixMode.Projection);
+        GL.LoadMatrix(ref _projection);
+        GL.MatrixMode(MatrixMode.Modelview);
+    }
+
     private void GLControlDisposed(object sender, EventArgs e)
     {
     }
     private void GLControlResize(object sender, EventArgs e)
     {
-        GL.Viewport(0, 0, Width, Height);
+        GL.Viewport(0, 0, glControl1.Width, glControl1.Height);
         CalculateProjectionMatrix();
+        LoadProjectionMatrix();
     }
     private void GLControlPaint(object sender, PaintEventArgs e)
     {
@@ -99,6 +107,9 @@ public partial class Form1 : Form
     private void UpdateViewMatrix()
     {
         _view = Matrix4.LookAt(_cameraPos, Vector3.Zero, Vector3.UnitZ);
+
+        GL.MatrixMode(MatrixMode.Modelview);
+        GL.LoadMatrix(ref _view);
 
         glControl1.Invalidate();
     }
