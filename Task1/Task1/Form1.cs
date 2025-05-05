@@ -1,12 +1,10 @@
 using OpenTK.Graphics.OpenGL;
 using OpenTK.Mathematics;
-using Task1.Shaders;
 
 namespace Task1;
 
 public partial class Form1 : Form
 {
-    Shader _shader;
 
     Matrix4 _model = Matrix4.Identity;
     Matrix4 _view = Matrix4.Identity;
@@ -32,7 +30,6 @@ public partial class Form1 : Form
         GL.ClearColor(0.8f, 1.0f, 1.0f, 1.0f);
         GL.Enable(EnableCap.DepthTest);
 
-        _shader = new();
 
         int vertexBufferObj = GL.GenBuffer();
         GL.BindBuffer(BufferTarget.ArrayBuffer, vertexBufferObj);
@@ -45,7 +42,6 @@ public partial class Form1 : Form
     }
     private void GLControlDisposed(object sender, EventArgs e)
     {
-        _shader.Dispose();
     }
     private void GLControlResize(object sender, EventArgs e)
     {
@@ -55,14 +51,6 @@ public partial class Form1 : Form
     private void GLControlPaint(object sender, PaintEventArgs e)
     {
         GL.Clear(ClearBufferMask.ColorBufferBit | ClearBufferMask.DepthBufferBit);
-
-        _shader.Use();
-        _shader.SetMatrix4("model", _model);
-        _shader.SetMatrix4("view", _view);
-        _shader.SetMatrix4("projection", _projection);
-        _shader.SetVector3("lightPos", _lightPos);
-        _shader.SetVector3("lightColor", _lightColor);
-        _shader.SetFloat("ambientStrength", _ambientStrength);
 
         _picture.Paint();
 

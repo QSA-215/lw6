@@ -1,13 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Kirill\\Desktop\\CG-main\\lw6\\Task1\\",
+  "WorkspaceRootPath": "D:\\1\u0060University\\CG\\lw6\\Task1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3D396C41-7979-47E5-8552-305C20B52AFC}|Task1\\Task1.csproj|c:\\users\\kirill\\desktop\\cg-main\\lw6\\task1\\task1\\picture\\picture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3D396C41-7979-47E5-8552-305C20B52AFC}|Task1\\Task1.csproj|d:\\1\u0060university\\cg\\lw6\\task1\\task1\\picture\\picture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3D396C41-7979-47E5-8552-305C20B52AFC}|Task1\\Task1.csproj|solutionrelative:task1\\picture\\picture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3D396C41-7979-47E5-8552-305C20B52AFC}|Task1\\Task1.csproj|c:\\users\\kirill\\desktop\\cg-main\\lw6\\task1\\task1\\picture\\shape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3D396C41-7979-47E5-8552-305C20B52AFC}|Task1\\Task1.csproj|d:\\1\u0060university\\cg\\lw6\\task1\\task1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D396C41-7979-47E5-8552-305C20B52AFC}|Task1\\Task1.csproj|solutionrelative:task1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D396C41-7979-47E5-8552-305C20B52AFC}|Task1\\Task1.csproj|d:\\1\u0060university\\cg\\lw6\\task1\\task1\\picture\\shape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3D396C41-7979-47E5-8552-305C20B52AFC}|Task1\\Task1.csproj|solutionrelative:task1\\picture\\shape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -18,30 +22,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\1\u0060University\\CG\\lw6\\Task1\\Task1\\Form1.cs",
+              "RelativeDocumentMoniker": "Task1\\Form1.cs",
+              "ToolTip": "D:\\1\u0060University\\CG\\lw6\\Task1\\Task1\\Form1.cs",
+              "RelativeToolTip": "Task1\\Form1.cs",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAYwHwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T18:33:32.457Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Picture.cs",
-              "DocumentMoniker": "C:\\Users\\Kirill\\Desktop\\CG-main\\lw6\\Task1\\Task1\\Picture\\Picture.cs",
+              "DocumentMoniker": "D:\\1\u0060University\\CG\\lw6\\Task1\\Task1\\Picture\\Picture.cs",
               "RelativeDocumentMoniker": "Task1\\Picture\\Picture.cs",
-              "ToolTip": "C:\\Users\\Kirill\\Desktop\\CG-main\\lw6\\Task1\\Task1\\Picture\\Picture.cs*",
+              "ToolTip": "D:\\1\u0060University\\CG\\lw6\\Task1\\Task1\\Picture\\Picture.cs*",
               "RelativeToolTip": "Task1\\Picture\\Picture.cs*",
-              "ViewState": "AgIAAAkAAAAAAAAAAAASwBwAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-05T18:33:18.226Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Shape.cs",
-              "DocumentMoniker": "C:\\Users\\Kirill\\Desktop\\CG-main\\lw6\\Task1\\Task1\\Picture\\Shape.cs",
+              "DocumentMoniker": "D:\\1\u0060University\\CG\\lw6\\Task1\\Task1\\Picture\\Shape.cs",
               "RelativeDocumentMoniker": "Task1\\Picture\\Shape.cs",
-              "ToolTip": "C:\\Users\\Kirill\\Desktop\\CG-main\\lw6\\Task1\\Task1\\Picture\\Shape.cs",
+              "ToolTip": "D:\\1\u0060University\\CG\\lw6\\Task1\\Task1\\Picture\\Shape.cs",
               "RelativeToolTip": "Task1\\Picture\\Shape.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAIwDgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-05T17:46:59.993Z",
               "EditorCaption": ""

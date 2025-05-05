@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Uu84uznK5p4=",
+  "dgSpecHash": "S5JbzlJ9e74=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Kirill\\Desktop\\CG-main\\lw6\\Task1\\Task1\\Task1.csproj",
+  "projectFilePath": "D:\\1`University\\CG\\lw6\\Task1\\Task1\\Task1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kirill\\.nuget\\packages\\assimpnet\\4.1.0\\assimpnet.4.1.0.nupkg.sha512",
     "C:\\Users\\Kirill\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",

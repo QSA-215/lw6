@@ -1,6 +1,4 @@
-﻿using Task1.Shaders;
-
-namespace Task1.Picture;
+﻿namespace Task1.Picture;
 
 public class Picture
 {

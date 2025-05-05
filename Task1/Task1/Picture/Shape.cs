@@ -1,6 +1,5 @@
 ﻿using Assimp;
 using OpenTK.Graphics.OpenGL;
-using OpenTK.Mathematics;
 using PrimitiveType = OpenTK.Graphics.OpenGL.PrimitiveType;
 
 namespace Task1.Picture;
@@ -63,11 +62,9 @@ public class Shape
             {
                 int index = indices[i];
 
-                // Нормали
                 var normal = mesh.Normals[index];
                 GL.Normal3(normal.X, normal.Y, normal.Z);
 
-                // Вершины с трансформацией
                 var vertex = mesh.Vertices[index];
                 GL.Vertex3(_x + vertex.X * _scale, _y + vertex.Y * _scale, _z + vertex.Z * _scale);
             }
